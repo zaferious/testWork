@@ -1,0 +1,43 @@
+<!-- Navbar -->
+<mat-card>
+  <mat-card-content>
+
+    <button mat-button color="primary" (click)="goToFirstPage()">
+      <mat-icon>person</mat-icon>
+      <span>First</span>
+    </button>
+    <button mat-button color="primary" (click)="goToSecondPage()">
+      <mat-icon>people_alt</mat-icon>
+      <span>Second</span>
+    </button>
+  </mat-card-content>
+</mat-card>
+
+<!--ข้อสอบ  -->
+<!-- ข้อสอบ -->
+<mat-card class="second m-4">
+  <mat-card-header>
+    <mat-card-title style="text-align: center;font-size: 35px;">โจทย์</mat-card-title>
+    <mat-card-subtitle style="text-align: center;font-size: 25px;">ข้อที่ 2</mat-card-subtitle>
+  </mat-card-header>
+  <!-- <img mat-card-image src="assets/bg/1.jpg" alt="Photo of a โจทย์"> -->
+  <mat-card-content>
+    <p style="font-size: 50px;font-family: comic sans ms;">Generate Short URL</p>
+    <form class="inputdata">
+      <mat-form-field class="inputword">
+        <input matInput placeholder="URL">
+      </mat-form-field>
+      <mat-form-field class="inputword">
+        <input matInput placeholder="จำนวนตัวอักษร">
+      </mat-form-field>
+      <!-- <mat-form-field>
+        <input matInput placeholder="Date" [matDatepicker]="picker" (focus)="picker.open()" readonly>
+      </mat-form-field>
+      <mat-datepicker #picker></mat-datepicker> -->
+    </form>
+
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary">Generate</button>
+  </mat-card-actions>
+</mat-card>
